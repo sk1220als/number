@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>숫자 맞히기 게임</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jua&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="bg">
+      <div class="wrap">
+        <h3>숫자 맞히기 게임</h3>
+        <img id="change" src="img/go.jpg" />
+        <!-- <span class="image">결과 화면 : <span id="result">UP / DOWN / BINGO</span> -->
+        <div id="result">5번 안에 맞혀보세요!</div>
+
+        <form>
+          <label>숫자 입력 : </label>
+          <input id="user" />
+          <div id="chance">남은 찬스 : 5번</div>
+        </form>
+        <button id="play">시작</button>
+        <button id="reset">재도전</button>
+      </div>
+    </div>
+
+    <script src="custom.js"></script>
+  </body>
+</html>
+<!--
+    1. html 요소 가지고 오기(input, button, result)
+    2. 숫자 만들기(random)
+    3. user 입력 - play 버튼을 클릭하면 컴퓨터 숫자와 user 숫자를 비교
+    - 컴퓨터 숫자 > user 숫자 UP
+    - 컴퓨터 숫자 < user 숫자 DOWN
+    - 컴퓨터 숫자 == user 숫자 BINGO
+-->
